@@ -1,0 +1,312 @@
+body
+{
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    height: 400%;
+}
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.Symbol{
+    transform: rotate(270deg);
+    display: inline-block;
+    font-size:x-small;
+    margin-left: 2px;
+}
+.navbar{
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+    padding-right: 24px;
+    padding-left: 24px;
+    vertical-align: middle;
+    justify-content: space-between;
+    border-style: none;
+}
+.Categories
+{
+    margin-right: 400px;
+    display: flex;
+    vertical-align: middle;
+    padding-left: 35px;
+    
+}
+.Title{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 1000;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 18px;
+}
+.list
+{
+    margin-left:0;
+}
+.Interact
+{
+    vertical-align: middle;
+    margin: 10px;
+}
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: medium;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+button:hover
+{
+    opacity: 0.7;
+}
+.box1{
+    position: relative;
+    display: flex;
+    vertical-align: middle;
+    background-color: blueviolet;
+}
+.empty
+{
+    flex: 1;
+}
+.Slider
+{
+    flex: 1;
+    text-align: center;
+    color: white;
+    font-size: small;
+    font-weight: 700;
+}
+.arrow-right{
+    font-size: smaller;
+}
+.Nothing:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.Main{
+    background-image: url("MAINPIC.jpg");
+    height: 700px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-end;
+}
+.Customize{
+    padding-top: 200px;
+    margin-right: 55%;
+    width: 500px;
+}
+.Titull{
+    font-size: 36px;
+    margin-bottom:10px;
+}
+.Description{
+    font-size: large;
+    color: black;
+}
+.Customize-PC{
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    transition: background-color 0.2s;
+    transition: box-shadow 0.1s;
+    
+}
+.Customize-PC:hover
+{
+    background-color:rgba(122, 0, 236, 0.956);
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+.text{
+    font-size: small;
+    color: gray;
+}
+.Player-PC
+{
+    margin:auto;
+    max-width: 1536px;
+    width: 1024px;
+    display: flex;
+    margin-top: 80px;
+    margin-bottom: 80px;
+    background-image: url("PlayerPC.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.Player-PC-content
+{
+    align-content: flex-start;
+    flex-direction: column;
+    padding-top: 100px;
+    padding-left: 30px;
+}
+.Player-PC-content p
+{
+    max-width:400px;
+    color: white;
+    line-height: 24px;
+
+}
+.Player-PC-content h1{
+    font-weight: 700;
+    color: white;
+    margin: 0;
+    margin-bottom: 20px;
+}
+.Player-PC-cost
+{
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.Shop-Player-PC{
+    border-style: solid;
+    border-color: white;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 250px;
+    transition: transform 0.2s;
+    transition: box-shadow 0.1s;
+    margin-bottom: 150px;
+}
+.Shop-Player-PC:hover
+{
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px gray;
+}
+.Short{
+    align-content: center;
+    vertical-align: middle;
+    text-align: center;
+   } 
+   .Container
+   {
+    display: flex;
+    justify-content: center;
+    vertical-align: top;
+    transition: opacity 0.2s;
+   }
+   .Prebuilt:hover .Quick-Shop
+   {
+    opacity: 1;
+   }
+   .Prebuilt{
+    cursor: pointer;
+    vertical-align: middle;
+    width: fit-content;
+    height: fit-content;
+    background-image: url("pcbackground.jpg");
+    background-repeat: no-repeat;
+    padding-left: 30px;
+    margin-right: 40px;
+    margin-bottom: 40px;
+    object-fit: contain;
+   }
+   .Prebuilt-image{
+    padding: 0px 16px 0px 16px;
+    transition: transform 0.2s;
+    cursor: pointer;
+   }
+   .Prebuilt-image:hover{
+    transform: scale(1.03);
+   }
+   .Promotion{
+    background-color: #81DF8B;
+    color: black;
+    margin: 15px;
+    border-radius: 5px;
+    padding: 4px 8px 4px 8px;
+   }
+   .Promotion:hover{
+    opacity: 1;
+   }
+   .Quick-Shop
+   {
+    height: max-content;
+    vertical-align: bottom;
+    opacity: 0;
+    background-color: gray;
+    color: rgb(73, 68, 68);
+    text-align: center;
+    cursor: pointer;
+    transition: opacity 0.2s,color 0.2s,background-color 0.2s;
+   }
+   .Quick-Shop:hover
+   {
+    background-color:rgb(115, 21, 229);
+    color: white; 
+   }
+   .Quick-Shop p
+   {
+    font-weight: 500;
+    font-size: larger;
+    margin: 0;
+    padding: 10px;
+   }
+   .Rating 
+   {
+    font-size: 12px;
+    color: #737279;
+    margin: 6px 0px 6px 0px
+   }
+   .INFO{
+    margin: 0px 0px 3px 0px;
+    font-size: 12px;
+    color: #59595F;
+
+   }
+   .SHOP{
+    font-size: large;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 100%;
+    background-color: rgb(115, 21, 229);
+    border-radius: 8px;
+    transition: transform 0.2s;
+   }
+   .SHOP:hover
+   {
+    transform: scale(1.05);
+    background-color:rgb(120, 21, 229) ;
+   }
+   .Rent-PC
+       {
+        padding: 0;
+        display: flex;
+        vertical-align: middle;
+        margin: auto;
+        background-image: url("afterflexbckgrnd.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 1200px;
+        height: fit-content;
+
+       }
+       .Rent-PC-Text
+       {
+        width: 500px;
+        padding: 30px;
+       }
+       .Rent-PC-Img
+       {
+        justify-content: center;
+        vertical-align: middle;
+        margin: 20px;
+        padding-left: 100px;
+       }
