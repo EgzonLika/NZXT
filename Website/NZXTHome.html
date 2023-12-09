@@ -1,18 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NZXT Home page</title>
     <link rel="stylesheet" href="NZXTStyles/Style.css">
-    <style>
-       .Footer{
-        background-image: url("NZXTStyles/Footerbckg.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        display: flex;
-        height: fit-content;
-        width: 100%;
-       }
-    </style>
 </head>
 <body>
     <div class="box1">
@@ -27,27 +19,35 @@
         <div class="Categories">
             <a href="NZXTHome.html" class="Title">NZXT</a>
             <ul class="list">
-                <button>Gaming PCs <span class="Symbol">&#x276E;</span></button>
-                <button>Components <span class="Symbol">&#x276E;</span></button>
-                <button>Monitors <span class="Symbol">&#x276E;</span></button>
-                <button>Gaming Gear <span class="Symbol">&#x276E;</span></button>
-                <button>Software <span class="Symbol">&#x276E;</span></button>
-                <button>Community <span class="Symbol">&#x276E;</span></button>
+                <button class="I">Gaming PCs <span class="Symbol">&#x276E;</span></button>
+                <button class="I">Components <span class="Symbol">&#x276E;</span></button>
+                <button class="I">Monitors <span class="Symbol">&#x276E;</span></button>
+                <button class="I">Gaming Gear <span class="Symbol">&#x276E;</span></button>
+                <button class="I">Software <span class="Symbol">&#x276E;</span></button>
+                <button class="I">Community <span class="Symbol">&#x276E;</span></button>
             </ul>
         </div>
         <div class="Interact">
-            <button><img src="c:\Users\MobiShop Selfie\Downloads\icons8-search (3).svg" alt="search"></button>
-            <button><img src="c:\Users\MobiShop Selfie\Downloads\icons8-question-mark-24 (1).png" alt="About Us"></button>
-            <button><img width="24" height="24" src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/FFFFFF/external-account-ui-anggara-basic-outline-anggara-putra.png" alt="external-account-ui-anggara-basic-outline-anggara-putra"/></button>
+            <button onclick="Search();"><img height="24" width="24" src="NZXTStyles\icons8-search-24 (1).png" alt="search"></button>
+            <button class="I"><img height="24" width="24" src="NZXTStyles\icons8-about-us-24.png" alt="About Us"></button>
+            <button class="I"><a href="NZXTLogIn.html"><img width="24" height="24" src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/FFFFFF/external-account-ui-anggara-basic-outline-anggara-putra.png" alt="external-account-ui-anggara-basic-outline-anggara-putra"/></a></button>
             <button><img width="24" height="24" src="https://img.icons8.com/ios/24/FFFFFF/shopping-cart--v1.png" alt="shopping-cart--v1"/></button>
 
         </div>
         <div class="empty"></div>
     </div>
-    <div ></div>
+    <div id="Search" class="Search">
+      <div class="empty" style="display:flex; flex-direction:row-reverse;">
+        <img height="24" width="24" src="NZXTStyles\icons8-search-24 (1).png" alt="search">
+      </div>
+      <div class="Search-bar">
+        <input type="text" placeholder="Search NZXT">
+      </div>
+      <div class="empty"></div>
+    </div>
     <div class="Main">
         <div class="Customize">
-            <img src="c:\Users\MobiShop Selfie\Pictures\blitzmode.png" alt="Blitz" height="40px">
+            <img src="NZXTStyles\blitzmode.png" alt="Blitz" height="40px">
             <h1 class="Titull">Expedite Your Costum PC</h1>
             <p class="Description">Blitz Mode ensures your custom PC is built and ready to ship in one business day.</p>
             <button class="Customize-PC">Customize Your PC</button>
@@ -336,8 +336,77 @@
             <img src="NZXTStyles\pcafterdisplay-removebg-preview.png" alt="PC" style="height: 230px;">
         </div>
     </div>
-    <div class="Footer">
-      
+    <div class="Footer"> 
+        <div class="Socials">
+          <div class="empty"></div>
+          <ul>
+            <li><a href="https://www.facebook.com/NZXT/" target="_blank"><img src="NZXTStyles\icons8-facebook-24 (1).png" alt="FB"></a></li>
+            <li><a href="https://twitter.com/intent/follow?screen_name=nzxt" target="_blank"><img src="NZXTStyles\icons8-twitter-24.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/nzxt/" target="_blank"><img src="NZXTStyles\icons8-instagram-24.png" alt="IG"></a></li>
+            <li><a href="https://youtube.com/nzxtus" target="_blank"><img src="NZXTStyles\icons8-youtube-24.png" alt="YT"></a></li>
+            <li><a href="https://www.twitch.tv/nzxt" target="_blank"><img src="NZXTStyles\icons8-twitch-24 (1).png" alt="Twitch"></a></li>
+            <li><a href="https://www.reddit.com/r/nzxt" target="_blank"><img src="NZXTStyles\icons8-reddit-24.png" alt="Reddit"></a></li>
+            <li><a href="https://www.tiktok.com/@nzxt" target="_blank"><img src="NZXTStyles\icons8-tiktok-24.png" alt="TikTok"></a></li>
+            <li><a href="https://discord.gg/NZXT" target="_blank"><img src="NZXTStyles\icons8-discord-24.png" alt="Discord"></a></li>
+          </ul>
+          <div class="empty"></div>
+        </div>
+        <div class="Footer-categories">
+          <div class="empty"></div>
+          <div class="Footer-Contact">
+            <p>CONTACT</p>
+            <button class="Footer-buttons">Company</button>
+            <button class="Footer-buttons">Customer Support</button>
+            <button class="Footer-buttons">Submit a Request</button>
+            <button class="Footer-buttons">Support Center</button>
+          </div>
+          <div class="Footer-Contact">
+            <p>ABOUT NZXT</p>
+            <button class="Footer-buttons">Founder Q & A</button>
+            <button class="Footer-buttons">Careers</button>
+            <button class="Footer-buttons">Customer Reviews</button>
+          </div>
+          <div class="Footer-Contact">
+            <p>COMMUNITY</p>
+            <button class="Footer-buttons">Our Discord</button>
+            <button class="Footer-buttons">Newsroom & Blog</button>
+          </div>
+          <div class="Footer-Contact">
+            <p>SOFTWARE</p>
+            <button class="Footer-buttons">CAM</button>
+            <button class="Footer-buttons">CAM Feedback</button>
+          </div>
+          <div class="Footer-Contact">
+            <p>ACCOUNT</p>
+            <button class="Footer-buttons">Manage Your Account</button>
+          </div>
+          <div class="Footer-Contact">
+            <p>NZXT STORE</p>
+            <button class="Footer-buttons">NZXT BLD PC</button>
+            <button class="Footer-buttons">Refurbished Builds</button>
+            <button class="Footer-buttons">FAQ</button>
+            <button class="Footer-buttons">Find a Retailer</button>
+          </div>
+          <div class="empty"></div>
+        </div>
+        <div class="END">
+          <div class="empty"></div>
+          <div class="END-END">
+            <p style="margin-bottom:5px;margin-left:10px"><b>NZXT</b></p>
+            <p style="display: inline-block; margin:0px; color: #91919c;margin-left:10px">&#xa9;NZXT Inc. 2023 All Rights Reserved</p>
+            <button class="END-buttons">Legal</button>
+            <button class="END-buttons">Privacy Policy</button>
+            <button class="END-buttons">Manage Cookie Preferences</button>
+          </div>
+          <div class="empty"></div>
+        </div>
     </div>
+    <script>
+      function Search()
+      {
+        let Search=document.getElementById("Search");
+        Search.style.opacity=1;
+      }
+    </script>
 </body>
 </html>
