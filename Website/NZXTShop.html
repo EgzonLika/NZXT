@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop</title>
+    <style>
+body
+{
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+h3
+{
+    font-size: 30px;
+}
+*{
+    font-family:Arial, Helvetica, sans-serif;
+}
+.Symbol{
+    transform: rotate(270deg);
+    display: inline-block;
+    font-size:x-small;
+    margin-left: 2px;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    color: white;
+
+    vertical-align: middle;
+    justify-content: space-between;
+    border-style: none;
+}
+.Categories
+{
+    margin-right: 400px;
+    display: flex;
+    vertical-align: middle;
+    padding-left: 35px;
+    
+}
+.Title{
+    color: white;
+    text-decoration: none;
+    display: inline-block;
+    font-weight: 1000;
+    font-size: large;
+    cursor: pointer;
+    margin-top: 18px;
+}
+.list
+{
+    width: fit-content;
+    margin-left:0;
+}
+.Interact
+{
+    vertical-align: middle;
+    margin: 10px;
+}
+button{
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: medium;
+    text-align: center;
+    margin-top: 5px;
+    cursor: pointer;
+}
+button:hover
+{
+    opacity: 0.7;
+}
+.box1{
+    width: 100%;
+    position: relative;
+    display: flex;
+    vertical-align: middle;
+    background-color: blueviolet;
+    color: white;
+}
+.empty
+{
+    padding: 0;
+    flex: 1;
+}
+.Slider
+{
+    flex: 1;
+    text-align: center;
+    font-size: small;
+    font-weight: 700;
+}
+.arrow-right{
+    font-size: smaller;
+}
+.Nothing:hover
+{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.Search
+{
+    width: 100%;
+    display: flex;
+    opacity: 0;
+    color: white;
+    background-color: #737279;
+    padding: 5px;
+}
+.Search-bar
+{
+    min-width: 1280px;
+    max-width: 1280px;
+    flex:1;
+    color: white;
+}
+.Search-bar input
+{
+    color: white;
+    outline: none;
+    border: none;
+    padding: 5px;
+    width: 100%;
+    border-width: 0;
+    border-style: none;
+    background-color:#737279;
+}
+.Search-bar input::placeholder
+{
+    color: white;
+}
+.Customize-PC{
+    color: white;
+    background-color: blueviolet;
+    padding: 10px;
+    padding-left: 45px;
+    padding-right: 45px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    transition: background-color 0.2s;
+    transition: box-shadow 0.1s;
+    
+}
+.Customize-PC:hover
+{
+    background-color:rgba(122, 0, 236, 0.956);
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px rgb(0, 0, 0);
+}
+.Continue-Shopping
+{
+    display: flex;
+    flex-direction: row;
+}
+.empty
+{
+    padding: 0;
+    flex: 1;
+}
+.Top
+{
+    height:230px;
+    width:1200px;
+    text-align: center;
+    align-content: center;
+    background-image: url("NZXTStyles/pcbackground.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.Options
+{
+    display: flex;
+    justify-content: center;
+}
+.PCS
+{
+    text-align: center;
+    margin: 20px;
+    padding: 30px;
+    background-image: url("NZXTStyles/pcbackground.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+a
+{
+    color: blueviolet;
+    text-decoration: none;
+}
+a:hover
+{
+    text-decoration: underline;
+}
+.Symbol
+{
+    transform: rotate(180deg);
+    display: inline-block;
+    font-size:x-small;
+    margin-left: 2px;
+}
+.Middle
+{
+    height: 250px;
+    width: 1200px;
+    background-image: url("ShopStyles/ShopBg2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+    padding-left: 40px;
+    color: white;
+    
+}
+.Shop-Player-PC{
+    font-size:16px;
+    border-style: solid;
+    border-color: white;
+    background: none;
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 250px;
+    transition: transform 0.2s;
+    transition: box-shadow 0.1s;
+    margin-bottom: 150px;
+}
+.Shop-Player-PC:hover
+{
+    opacity: 1;
+    transform: scale(1.1);
+    box-shadow: 5px 5px 5px gray;
+}
+.Container
+   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+   }
+.img
+{
+    height:auto;
+    margin: 0;
+    padding:0;
+    overflow: hidden;
+    background-image: url("NZXTStyles/pcbackground.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.Container p
+{
+    margin: 5px;
+    font-size: 12px;
+    color: #737279;
+    margin-bottom: 40px;
+}
+.box{
+    display: flex; 
+    flex-direction:column;
+    margin:20px;
+    margin-bottom:0;
+    align-items:left;
+}
+.img p
+{
+    font-size: 15px;
+    text-align: center;
+    margin: 0;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    opacity: 0;
+    background-color: gray;
+    color: rgb(73, 68, 68);
+    cursor: pointer;
+    transition: opacity 0.2s,color 0.2s,background-color 0.2s;
+}
+.img:hover p
+{
+    opacity: 1;
+}
+.img p:hover
+{
+    background-color:rgb(115, 21, 229);
+    color: white; 
+}
+.Footer{
+    margin-top: 50px;
+    background-image: url("NZXTStyles/Footerbckg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    width: 100%;
+   }
+   .Socials
+   {
+    padding-right:800px;
+    display: flex;
+   }
+   ul
+   {
+    display: flex;
+    list-style: none;
+   }
+   li{
+    height: 30px;
+    margin: 15px;
+   }
+   .Footer-categories
+   {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 150px;
+   }
+   .Footer-Contact
+   {
+    font-size: 14px;
+    color: white;
+    padding-right: 30px;
+    margin-right:50px;
+   }
+   .Footer-buttons{
+    padding: 0;
+    margin-bottom: 15px;
+    font-size: 14px;
+    background-color: transparent;
+    color: #91919c;
+    display: block;
+    transition: color 0.3s;
+   }
+   .Footer-buttons:hover{
+    color: white;
+   }
+   .END
+   {
+    padding-bottom: 20px;
+    height: fit-content;
+    display: flex;
+    justify-content:left;
+    flex-direction: row;
+   }
+   .END-END
+   {
+    padding-right: 650px;
+    color: white;
+    font-size: 12px;
+   }
+   .END-buttons
+   {
+    width: fit-content;
+    padding: 0;
+    margin-left:20px;
+    font-size: 12px;
+    background-color: transparent;
+    color: #91919c;
+    transition: color 0.3s;
+   }
+
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <div class="empty"></div>
+        <div class="Slider">
+            <p>All PCs built in 10-15 Business Days. <a class="Nothing">See Terms. <span class="arrow-right">&#x276F;</span></a></p>
+        </div>
+        <div class="empty"></div>
+    </div>
+    <div class="navbar">
+        <div class="empty"></div>
+        <div class="Categories">
+            <a href="NZXTHome.html" class="Title">NZXT</a>
+            <ul class="list">
+                <button class="I">Gaming PCs <span class="Symbol">&#x276E;</span></button>
+                <button class="I">Components <span class="Symbol">&#x276E;</span></button>
+                <button class="I">Monitors <span class="Symbol">&#x276E;</span></button>
+                <button class="I">Gaming Gear <span class="Symbol">&#x276E;</span></button>
+                <button class="I">Software <span class="Symbol">&#x276E;</span></button>
+                <button class="I">Community <span class="Symbol">&#x276E;</span></button>
+            </ul>
+        </div>
+        <div class="Interact">
+            <button onclick="Search();"><img height="24" width="24" src="NZXTStyles\icons8-search-24 (1).png" alt="search"></button>
+            <button class="I"><img height="24" width="24" src="NZXTStyles\icons8-about-us-24.png" alt="About Us"></button>
+            <button class="I"><a href="NZXTLogIn.html"><img width="24" height="24" src="https://img.icons8.com/external-anggara-basic-outline-anggara-putra/24/FFFFFF/external-account-ui-anggara-basic-outline-anggara-putra.png" alt="external-account-ui-anggara-basic-outline-anggara-putra"/></a></button>
+            <button><a href="NZXTShop.html"><img width="24" height="24" src="https://img.icons8.com/ios/24/FFFFFF/shopping-cart--v1.png" alt="shopping-cart--v1"/></a></button>
+
+        </div>
+        <div class="empty"></div>
+    </div>
+    <div id="Search" class="Search">
+      <div class="empty" style="display:flex; flex-direction:row-reverse;">
+        <img height="24" width="24" src="NZXTStyles\icons8-search-24 (1).png" alt="search">
+      </div>
+      <div class="Search-bar">
+        <input type="text" placeholder="Search NZXT">
+      </div>
+      <div class="empty"></div>
+    </div>
+    <div class="Continue-Shopping">
+        <div class="empty"></div>
+        <div class="Top">
+            <h3>Your cart is empty</h3>
+            <p style="font-size: 16px; width:400px;margin-left:33%;color:#737279; margin-top:10px">Need Inspiration? Check out our recommended items to begin building the extraordinary!</p>
+            <button class="Customize-PC">Continue Shopping</button>
+        </div>
+        <div class="empty"></div>
+    </div>
+    <div class="Options">
+        <div class="PCS">
+            <img height="320" src="ShopStyles\ShoppingPC1.jpg" alt="">
+            <h3>Shop Prebuilts</h3>
+            <a href="">Shop Prebuilt PCs <span class="Symbol">&#x276E;</span></a>
+        </div>
+        <div class="PCS">
+            <img height="320" src="ShopStyles\ShoppingPC2.jpg" alt="">
+            <h3>Customize a PC</h3>
+            <a href="">Start Your PC Build <span class="Symbol">&#x276E;</span></a>
+        </div>
+        <div class="PCS">
+            <img height="320" src="ShopStyles\ShoppingPC3.jpg" alt="">
+            <h3>Special Offers</h3>
+            <a href="">Shop Special Offers <span class="Symbol">&#x276E;</span></a>
+        </div>
+    </div>
+    <div class="Continue-Shopping">
+        <div class="empty"></div>
+        <div class="Middle">
+            <p style="margin:auto;margin-top: 50px;">New</p>
+            <h3 style="margin: 10px; margin-left:0;">Display it on Canvas</h3>
+            <p style="margin: 10px; margin-left:0;">32" Curved QHD 165Hz Gaming Monitor</p>
+            <button class="Shop-Player-PC">Shop QHD Monitors</button>
+        </div>
+        <div class="empty"></div>
+    </div>
+    <div style="display: flex;">
+        <div class="empty"></div>
+        <div style="justify-content:center; padding-right:900px"><h3>Customers Also Bought</h3></div>
+        <div class="empty"></div>
+    </div>
+    <div class="Container">
+        <div class="box">
+            <div class="img">
+                <img style="margin:15px" src="ShopStyles\item1-removebg-preview.png" alt="Item1" height="230px" width="230px">
+                <p>Quick Shop</p>
+            </div>
+            <p style="color: black ; font-weight:600;font-size:18px; margin-bottom:5px;">Relay Headset</p>
+            <p>Hi-Res Certified Wired PC Gaming Headset</p>
+            <p style="font-size:14px; color: black;">$99.99</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img style="margin:15px" src="ShopStyles\Item2-removebg-preview.png" alt="Item2" height="230px" width="230px">
+                <p>Quick Shop</p>
+            </div>
+            <p style="color: black ; font-weight:600;font-size:18px; margin-bottom:5px;">Relay Speakers</p>
+            <p >80 Watt Desktop PC Gaming Speakers</p>
+            <p style="font-size:14px; color: black;">$249.99</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img style="margin:15px" src="ShopStyles\Item3-removebg-preview.png" alt="Item3" height="230px" width="230px">
+                <p>Quick Shop</p>
+            </div>
+            <p style="color: black ; font-weight:600;font-size:18px;margin-bottom:5px;">Relay Subwoofer</p>
+            <p>140 Watt Desktop PC Gaming Subwoofer</p>
+            <p style="font-size:14px; color: black;">$149.99</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img style="margin:15px" src="ShopStyles\Item4-removebg-preview.png" alt="Item4" height="230px" width="230px">
+                <p>Quick Shop</p>
+            </div>
+            <p style="color: black ; font-weight:600;font-size:18px;margin-bottom:5px;">SwitchMix</p>
+            <p>PC Gaming Headset Stand with Mixer</p>
+            <p style="font-size:14px; color: black;">$129.99</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img style="margin:15px" src="ShopStyles\Item5-removebg-preview.png" alt="Item5" height="230px" width="230px">
+                <p>Quick Shop</p>
+            </div>
+            <p style="color: black ; font-weight:600;font-size:18px;margin-bottom:5px;">Capsule Mini</p>
+            <p>Small Cardioid USB Gaming Microphone</p>
+            <p style="font-size:14px; color: black;">$69.99</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img style="margin:15px" src="ShopStyles\Item6-removebg-preview.png" alt="Item6" height="230px" width="230px">
+                <p>Quick Shop</p>
+            </div>
+            <p style="color: black ; font-weight:600;font-size:18px;margin-bottom:5px;">Boom Arm Mini</p>
+            <p>Compact Low Noise Mini Microphone Boom Arm</p>
+            <p style="font-size:14px; color: black;">$69.99</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img style="margin:15px" src="ShopStyles\Item7-removebg-preview.png" alt="Item7" height="230px" width="230px">
+                <p>Quick Shop</p>
+            </div>
+            <p style="color: black ; font-weight:600;font-size:18px;margin-bottom:5px;">Monitor Arm (Single)</p>
+            <p style="margin-bottom:5px;">Single Monitor Support</p>
+            <p class="Rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="#7315E5">
+                <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="#7315E5">
+                <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="#7315E5">
+                <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="#7315E5">
+                <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="#7315E5">
+                <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+              </svg>
+              (6)
+            <p style="font-size:14px; color: black;">$99.99</p>
+        </div>
+        <div class="box">
+            <div class="img">
+                <img style="margin:15px" src="ShopStyles\Item8-removebg-preview.png" alt="Item8" height="230px" width="230px">
+                <p>Quick Shop</p>
+            </div>
+            <p style="color: black ; font-weight:600;font-size:18px;margin-bottom:5px;">Monitor Arm (Dual)</p>
+            <p style="margin-bottom:5px;">Dual Monitor Support</p>
+            <p class="Rating"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="#7315E5">
+                <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="#7315E5">
+                <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="#7315E5">
+                <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+              </svg>
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="15" height="15" fill="#7315E5">
+                <path d="M12 2l2.4 7.2h7.6l-6 4.8 2.4 7.2-6-4.8-6 4.8 2.4-7.2-6-4.8h7.6z"/>
+              </svg>
+              (7)
+            <p style="font-size:14px; color: black;">$169.99</p>
+        </div>
+    </div>
+    <div class="Footer"> 
+        <div class="Socials">
+          <div class="empty"></div>
+          <ul>
+            <li><a href="https://www.facebook.com/NZXT/" target="_blank"><img src="NZXTStyles\icons8-facebook-24 (1).png" alt="FB"></a></li>
+            <li><a href="https://twitter.com/intent/follow?screen_name=nzxt" target="_blank"><img src="NZXTStyles\icons8-twitter-24.png" alt="Twitter"></a></li>
+            <li><a href="https://www.instagram.com/nzxt/" target="_blank"><img src="NZXTStyles\icons8-instagram-24.png" alt="IG"></a></li>
+            <li><a href="https://youtube.com/nzxtus" target="_blank"><img src="NZXTStyles\icons8-youtube-24.png" alt="YT"></a></li>
+            <li><a href="https://www.twitch.tv/nzxt" target="_blank"><img src="NZXTStyles\icons8-twitch-24 (1).png" alt="Twitch"></a></li>
+            <li><a href="https://www.reddit.com/r/nzxt" target="_blank"><img src="NZXTStyles\icons8-reddit-24.png" alt="Reddit"></a></li>
+            <li><a href="https://www.tiktok.com/@nzxt" target="_blank"><img src="NZXTStyles\icons8-tiktok-24.png" alt="TikTok"></a></li>
+            <li><a href="https://discord.gg/NZXT" target="_blank"><img src="NZXTStyles\icons8-discord-24.png" alt="Discord"></a></li>
+          </ul>
+          <div class="empty"></div>
+        </div>
+        <div class="Footer-categories">
+          <div class="empty"></div>
+          <div class="Footer-Contact">
+            <p>CONTACT</p>
+            <button class="Footer-buttons">Company</button>
+            <button class="Footer-buttons">Customer Support</button>
+            <button class="Footer-buttons">Submit a Request</button>
+            <button class="Footer-buttons">Support Center</button>
+          </div>
+          <div class="Footer-Contact">
+            <p>ABOUT NZXT</p>
+            <button class="Footer-buttons">Founder Q & A</button>
+            <button class="Footer-buttons">Careers</button>
+            <button class="Footer-buttons">Customer Reviews</button>
+          </div>
+          <div class="Footer-Contact">
+            <p>COMMUNITY</p>
+            <button class="Footer-buttons">Our Discord</button>
+            <button class="Footer-buttons">Newsroom & Blog</button>
+          </div>
+          <div class="Footer-Contact">
+            <p>SOFTWARE</p>
+            <button class="Footer-buttons">CAM</button>
+            <button class="Footer-buttons">CAM Feedback</button>
+          </div>
+          <div class="Footer-Contact">
+            <p>ACCOUNT</p>
+            <button class="Footer-buttons">Manage Your Account</button>
+          </div>
+          <div class="Footer-Contact">
+            <p>NZXT STORE</p>
+            <button class="Footer-buttons">NZXT BLD PC</button>
+            <button class="Footer-buttons">Refurbished Builds</button>
+            <button class="Footer-buttons">FAQ</button>
+            <button class="Footer-buttons">Find a Retailer</button>
+          </div>
+          <div class="empty"></div>
+        </div>
+        <div class="END">
+          <div class="empty"></div>
+          <div class="END-END">
+            <p style="margin-bottom:5px;margin-left:10px"><b>NZXT</b></p>
+            <p style="display: inline-block; margin:0px; color: #91919c;margin-left:10px">&#xa9;NZXT Inc. 2023 All Rights Reserved</p>
+            <button class="END-buttons">Legal</button>
+            <button class="END-buttons">Privacy Policy</button>
+            <button class="END-buttons">Manage Cookie Preferences</button>
+          </div>
+          <div class="empty"></div>
+        </div>
+    </div>
+    <script>
+        function Search()
+        {
+          let Search=document.getElementById("Search");
+          Search.style.opacity=1;
+        }
+      </script>
+</body>
+</html>
