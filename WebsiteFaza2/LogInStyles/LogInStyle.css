@@ -1,0 +1,92 @@
+body
+        {
+            height: 100vh;
+            width: 100vw;
+            background-image: url("plain-purple-background-hefxwfzmmbp8leis.jpg");
+            background-size:cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            vertical-align: middle;
+            align-items: center;
+        }
+        .Text
+        {
+            color: white;
+            margin-right: 100px;
+            width:500px;
+        }
+        .Log-In
+        {
+            background-color: white;
+            color: black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-style: none;
+            margin-top: 100px;;
+            padding-right: 40px;
+            padding-left: 40px;
+            border-width: 1px;
+            height: fit-content;
+            border-radius: 10px;
+            margin-bottom:150px;
+        }
+        .Input
+        {
+            border-width: 1px;
+            border-radius: 8px;
+            border-style: solid;
+            width: 300px;
+            padding: 10px;
+            margin: 20px;
+        }
+        .Log-In-Button
+        {
+            border-style: none;
+            border-width: 1px;
+            border-radius: 30px;
+            background-color: #0195f7;
+            color: white;
+            width: 320px;
+            padding: 10px;
+            margin: 15px;
+            margin-bottom:30px;
+            transition: transform 0.2s;
+        }
+        .Gmail
+        {
+            font-size: 15px;
+            border-style: solid;
+            border-width: 1px;
+            border-radius: 30px;
+            background-color: white;
+            color: black;
+            width: 320px;
+            padding: 10px;
+            margin: 15px;
+            margin-bottom: 70px;
+            transition: transform 0.2s;
+        }
+        button:hover
+        {
+            transform: scale(1.02);
+            cursor: pointer;
+        }
+        @media (max-width:800px) {
+            body{
+                flex-direction: column;
+            }
+            .Text{
+                display: none;
+            }
+            .Log-In
+            {
+                margin:50%;
+                width:auto;
+                padding: 10px;
+            }
+        }
